@@ -1,0 +1,17 @@
+package com.corejavahub.service;
+
+import java.util.List;
+
+import com.corejavahub.exception.TwitException;
+import com.corejavahub.exception.UserException;
+import com.corejavahub.model.Twit;
+import com.corejavahub.model.User;
+
+public interface TwitService {
+
+	public Twit createdTwit(Twit req, User user) throws UserException;
+
+	public List<Twit> findAllTwit();
+
+	public Twit retwit(Long twitId, User user) throws UserException, TwitException;
+}

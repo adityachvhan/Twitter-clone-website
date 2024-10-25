@@ -1,0 +1,21 @@
+package com.corejavahub.mapper;
+
+import com.corejavahub.dto.TwitDto;
+import com.corejavahub.dto.UserDto;
+import com.corejavahub.model.Twit;
+import com.corejavahub.model.User;
+
+public class TwitDtoMapper {
+
+	
+	public static TwitDto toTwitDto(Twit twit, User reqUser) {
+		
+		
+		UserDto user =UserDtoMapper.toUserDto(twit.getUser());
+		
+
+		return null;
+		
+	}
+}
+

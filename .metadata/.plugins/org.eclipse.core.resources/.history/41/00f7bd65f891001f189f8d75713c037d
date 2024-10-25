@@ -1,0 +1,32 @@
+package com.corejavahub.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.corejavahub.exception.TwitException;
+import com.corejavahub.exception.UserException;
+import com.corejavahub.model.Like;
+import com.corejavahub.model.User;
+import com.corejavahub.repository.LikeRepository;
+
+@Service
+public class LikeServiceImplementation implements LikeService{
+	
+	@Autowired
+	private LikeRepository likeRepository;
+
+	@Override
+	public Like likeTwit(Long twitId, User user) throws UserException, TwitException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Like> getAllLikes(Long userId) throws TwitException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
+}

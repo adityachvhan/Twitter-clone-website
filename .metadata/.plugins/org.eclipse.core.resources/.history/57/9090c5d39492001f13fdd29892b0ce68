@@ -1,0 +1,19 @@
+package com.corejavahub.mapper;
+
+import com.corejavahub.dto.TwitDto;
+import com.corejavahub.dto.UserDto;
+import com.corejavahub.model.Twit;
+import com.corejavahub.model.User;
+import com.corejavahub.util.TwitUtil;
+
+public class TwitDtoMapper {
+
+	public static TwitDto toTwitDto(Twit twit, User reqUser) {
+
+		UserDto user = UserDtoMapper.toUserDto(twit.getUser());
+
+		boolean isLiked = TwitUtil.isLikedByReqUser(reqUser, twit);
+		return null;
+
+	}
+}

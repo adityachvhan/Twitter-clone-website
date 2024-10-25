@@ -1,0 +1,5 @@
+package com.corejavahub.dto.mapper;
+
+public class UserDtoMapper {
+
+}

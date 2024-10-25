@@ -1,0 +1,5 @@
+package com.corejavahub.mapper;
+
+public class LikeDtoMapper {
+
+}
